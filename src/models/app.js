@@ -59,7 +59,7 @@ export default {
         },
 
         querySuccess(state, { payload }) {
-            return { ...state, name: payload.name, time: payload.time };
+            return { ...state, number: payload.number, time: payload.time };
         },
         queryFailed(state, { payload }){
             return { ...state, error: payload, errorModalVisible: true };

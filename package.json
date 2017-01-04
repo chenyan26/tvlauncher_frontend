@@ -16,7 +16,9 @@
     "path-to-regexp": "^1.6.0",
     "qs": "^6.3.0",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "react-slick": "^0.14.5",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
     "atool-build": "^0.7.6",
@@ -38,4 +40,3 @@
     "test": "atool-test-mocha ./src/**/*-test.js"
   }
 }
-

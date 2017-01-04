@@ -19,11 +19,13 @@ class Container extends Component {
               <div className={styles.my_home_background_div}>
 
                 <div className={styles.my_top_div}>
-                  <label>{ number }</label>
-                  <label>{ time }</label>
+                  <div className="row">
+                    <div className="col-md-10">{ number }</div>
+                    <div className="col-md-2">{ time }</div>
+                  </div>
                 </div>
 
-                  {this.props.children}
+                {this.props.children}
               </div>
             </div>
     );
