@@ -4,6 +4,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'dva';
 import { Link } from 'dva/router';
+
+import TopBar from '../components/TopBar';
 // <Menu.Item key="vod_record">VoD点播记录
 //   <Link to="vod_record"/>
 // </Menu.Item>
@@ -14,18 +16,18 @@ class Container extends Component {
 
   render() {
     const { number, time } = this.props;
+    const topBarProps = {
+      number: number,
+      time: time
+    };
     return (
             <div className={styles.my_container_div}>
               <div className={styles.my_home_background_div}>
 
-                <div className={styles.my_top_div}>
-                  <div className="row">
-                    <div className="col-md-10">{ number }</div>
-                    <div className="col-md-2">{ time }</div>
-                  </div>
-                </div>
+                <TopBar {...topBarProps}/>
 
                 {this.props.children}
+
               </div>
             </div>
     );

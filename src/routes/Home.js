@@ -83,7 +83,7 @@ class Home extends React.Component {
         return (
                 <div className={`row ${styles.container_div}`}>
                     {/* 左边的视频图片部分 */}
-                    <img className={`col-md-4 ${styles.video_img}`}
+                    <img className={`${styles.video_img} col-md-4 img-rounded`}
                          src="src/img/v.jpg" />
 
                     {/* 右边的滚动部分 */}
@@ -92,7 +92,7 @@ class Home extends React.Component {
                             {this.state.divs.map((obj, index) => {
                                 return(
                                         <div key={index}>
-                                            <img className={`${this.state.selected == index ? styles.selected_img : styles.unSelected_img}`}
+                                            <img className={`${this.state.selected == index ? styles.selected_img : styles.unSelected_img} img-rounded`}
                                             src={obj.img}/>
                                         </div>
                                 );

@@ -3,7 +3,6 @@ import 'jquery/src/jquery.js';
 import './index.html';
 import './index.less';
 
-
 import 'bootstrap/less/bootstrap.less';
 import 'bootstrap/dist/js/bootstrap.js';
 
