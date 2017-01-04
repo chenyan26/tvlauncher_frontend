@@ -61,12 +61,12 @@ class Home extends React.Component {
 
     state = ({
         divs:[
-            {title: "直播", color: "#F465FF"},
-            {title: "回看／点播／VR", color: "#FFFF23"},
-            {title: "视频通信", color: "#34FFFF"},
-            {title: "消息中心", color: "#FF56FF"},
-            {title: "娱乐游戏", color: "#FF7768"},
-            {title: "系统服务", color: "#F2FF6F"} ],
+            {title: "直播", color: "#F465FF", img:"src/img/0.jpg"},
+            {title: "回看／点播／VR", color: "#FFFF23", img:"src/img/1.jpg"},
+            {title: "视频通信", color: "#34FFFF", img:"src/img/2.jpg"},
+            {title: "消息中心", color: "#FF56FF", img:"src/img/3.jpg"},
+            {title: "娱乐游戏", color: "#FF7768", img:"src/img/4.jpg"},
+            {title: "系统服务", color: "#F2FF6F", img:"src/img/5.jpg"} ],
         selected: 0
     });
 
@@ -87,13 +87,15 @@ class Home extends React.Component {
                          src="src/img/v.jpg" />
 
                     {/* 右边的滚动部分 */}
-                    <div className={`col-md-7 ${styles.slider_div}`}>
+                    <div className={`col-md-8 ${styles.slider_div}`}>
                         <Slider ref={c => this.slider = c } {...settings}>
                             {this.state.divs.map((obj, index) => {
-                                return(<div key={index}
-                                            className={`${this.state.selected == index ? styles.selected_div : styles.unSelected_div}`}
-                                            id={"div_" + index}
-                                            style={{ "backgroundColor": obj.color}}>{obj.title}</div>);
+                                return(
+                                        <div key={index}>
+                                            <img className={`${this.state.selected == index ? styles.selected_img : styles.unSelected_img}`}
+                                            src={obj.img}/>
+                                        </div>
+                                );
                             })}
                         </Slider>
 
