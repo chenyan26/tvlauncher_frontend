@@ -17,8 +17,10 @@ class Home extends React.Component {
         $(document).ready(()=> {
             $(document).keydown((e)=> {
                 switch (e.which) {
-                    case 13:
+                    case 13: {
                         console.log("点击了" + selectedItem);
+                        console.log(this.state.divs[selectedItem].url);
+                    }
                         break;
                     case 37: {
                         console.log("左");
@@ -27,22 +29,23 @@ class Home extends React.Component {
                         if (selectedItem == 3) { //可以左滚
                             this.previous();
                         }
-                        selectedItem --;
+                        selectedItem--;
                         this.setState({
                             selected: selectedItem
                         });
-                        break;
                     }
-                    case 39:
+                        break;
+                    case 39: {
                         console.log("右");
                         if (selectedItem == 5) return;
                         if (selectedItem == 2) { //可以右滚
                             this.next();
                         }
-                        selectedItem ++;
+                        selectedItem++;
                         this.setState({
                             selected: selectedItem
                         });
+                    }
                         break;
                 }
             });
@@ -61,12 +64,12 @@ class Home extends React.Component {
 
     state = ({
         divs:[
-            {title: "直播", color: "#F465FF", img:"src/img/0.jpg"},
-            {title: "回看／点播／VR", color: "#FFFF23", img:"src/img/1.jpg"},
-            {title: "视频通信", color: "#34FFFF", img:"src/img/2.jpg"},
-            {title: "消息中心", color: "#FF56FF", img:"src/img/3.jpg"},
-            {title: "娱乐游戏", color: "#FF7768", img:"src/img/4.jpg"},
-            {title: "系统服务", color: "#F2FF6F", img:"src/img/5.jpg"} ],
+            {title: "直播", img: "src/img/0.jpg", url: "zhibo"},
+            {title: "回看／点播／VR", img: "src/img/1.jpg", url: "huikan"},
+            {title: "视频通信", img: "src/img/2.jpg", url: "shiping"},
+            {title: "消息中心", img: "src/img/3.jpg", url: "xiaoxi"},
+            {title: "娱乐游戏", img: "src/img/4.jpg", url: "yule"},
+            {title: "系统服务", img: "src/img/5.jpg", url: "xitong"} ],
         selected: 0
     });
 
@@ -98,7 +101,6 @@ class Home extends React.Component {
                                 );
                             })}
                         </Slider>
-
                     </div>
                 </div>
         );
