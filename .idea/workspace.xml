@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76db2a93-458b-41e8-98d5-4d1f37b11fb0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/Home_old.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/UnevenSetsFinite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/v.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/slick-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/slick.min.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TopBar.js" afterPath="$PROJECT_DIR$/src/components/TopBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TopBar.less" afterPath="$PROJECT_DIR$/src/components/TopBar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.less" afterPath="$PROJECT_DIR$/src/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Container.js" afterPath="$PROJECT_DIR$/src/routes/Container.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Container.less" afterPath="$PROJECT_DIR$/src/routes/Container.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Home.js" afterPath="$PROJECT_DIR$/src/routes/Home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Home.less" afterPath="$PROJECT_DIR$/src/routes/Home.less" />
     </list>
     <ignored path="frontend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,24 +43,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="528">
+              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
               <folding>
                 <element signature="e#40#92#0" expanded="true" />
+                <marker date="1484880424000" expanded="true" signature="2995:3759" ph="..." />
+                <marker date="1484880424000" expanded="true" signature="3067:3736" ph="..." />
+                <marker date="1484880424000" expanded="true" signature="3314:3320" ph="..." />
+                <marker date="1484880424000" expanded="true" signature="3351:3608" ph="..." />
+                <marker date="1484880424000" expanded="true" signature="3443:3561" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-slick/src/slider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -55,8 +63,38 @@
       <file leaf-file-name="TopBar.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/TopBar.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="103">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopBar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TopBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Container.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/routes/Container.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/Home.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -79,9 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/ContentModal.js" />
-        <option value="$PROJECT_DIR$/src/utils/request.js" />
-        <option value="$PROJECT_DIR$/src/tests/services/customer-test.js" />
         <option value="$PROJECT_DIR$/src/components/CustomerModal.js" />
         <option value="$PROJECT_DIR$/mock/content.js" />
         <option value="$PROJECT_DIR$/src/services/stb.js" />
@@ -115,20 +150,23 @@
         <option value="$PROJECT_DIR$/src/routes/Sale.js" />
         <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/src/models/app.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/FocusOnSelect.js" />
         <option value="$PROJECT_DIR$/src/routes/Home_old.js" />
         <option value="$PROJECT_DIR$/src/utils/keypress_nav.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/routes/Home.less" />
-        <option value="$PROJECT_DIR$/src/routes/Container.js" />
-        <option value="$PROJECT_DIR$/src/index.less" />
-        <option value="$PROJECT_DIR$/src/routes/Container.less" />
-        <option value="$PROJECT_DIR$/src/components/TopBar.less" />
         <option value="$PROJECT_DIR$/src/lib/slick.min.css" />
         <option value="$PROJECT_DIR$/src/lib/slick-theme.min.css" />
+        <option value="$PROJECT_DIR$/mock/app.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/index.less" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/libs/jquery.als-1.7.min.js" />
+        <option value="$PROJECT_DIR$/src/routes/Home222.js" />
+        <option value="$PROJECT_DIR$/src/routes/Container.js" />
+        <option value="$PROJECT_DIR$/src/routes/Container.less" />
+        <option value="$PROJECT_DIR$/src/routes/Home.less" />
         <option value="$PROJECT_DIR$/src/routes/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/TopBar.less" />
         <option value="$PROJECT_DIR$/src/components/TopBar.js" />
       </list>
     </option>
@@ -142,7 +180,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="735" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,7 +208,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,42 +326,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvlauncher_frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvlauncher_frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvlauncher_frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvlauncher_frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -345,6 +346,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,8 +371,8 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/routes" />
-      <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/services" />
     </key>
   </component>
@@ -544,7 +546,14 @@
       <workItem from="1483925136053" duration="7337000" />
       <workItem from="1483952896243" duration="548000" />
       <workItem from="1484011790911" duration="2799000" />
-      <workItem from="1484109958085" duration="1640000" />
+      <workItem from="1484109958085" duration="4181000" />
+      <workItem from="1484616484294" duration="710000" />
+      <workItem from="1484620216869" duration="6051000" />
+      <workItem from="1484702204828" duration="808000" />
+      <workItem from="1484706573789" duration="2345000" />
+      <workItem from="1484788378836" duration="392000" />
+      <workItem from="1484796955094" duration="12314000" />
+      <workItem from="1484873817973" duration="7467000" />
     </task>
     <servers />
   </component>
@@ -581,7 +590,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352330000" />
+    <option name="totallyTimeSpent" value="384958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,26 +602,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="735" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19698173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -652,12 +661,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/services/sale.js" />
-    <entry file="file://$PROJECT_DIR$/.editorconfig" />
-    <entry file="file://$PROJECT_DIR$/.eslintignore" />
-    <entry file="file://$PROJECT_DIR$/.eslintrc" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/app.config.js" />
     <entry file="file://$PROJECT_DIR$/proxy.config.js" />
     <entry file="file://$PROJECT_DIR$/src/routes/Customer.js" />
     <entry file="file://$PROJECT_DIR$/src/components/CustomerModal.js" />
@@ -673,16 +676,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-slick/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/images/photos/sample-01.jpg" />
     <entry file="file://$PROJECT_DIR$/src/lib/js/external/_oldies/jquery-1.3.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/routes/Home_old.less" />
     <entry file="file://$PROJECT_DIR$/src/utils/keypress_nav.js" />
     <entry file="file://$PROJECT_DIR$/src/routes/Home_2.less" />
     <entry file="file://$PROJECT_DIR$/src/components/Responsive.js" />
@@ -694,24 +689,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/Home_2.js" />
-    <entry file="file://$PROJECT_DIR$/src/routes/Home_old.js" />
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/img/bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/img/Untitled.png" />
@@ -721,20 +701,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/img/topbg20.png" />
-    <entry file="file://$PROJECT_DIR$/src/models/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/Container.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -742,33 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TopBar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,79 +729,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mock/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UnevenSetsFinite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/Container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UnevenSetsFinite.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-slick/src/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="22">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Container_old.less" />
+    <entry file="file://$PROJECT_DIR$/src/routes/Container_old.js" />
+    <entry file="file://$PROJECT_DIR$/mock/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TopBar.js">
+    <entry file="file://$PROJECT_DIR$/src/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#40#92#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/Home.less">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="301">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Home_old.less" />
+    <entry file="file://$PROJECT_DIR$/src/routes/Home222.js" />
+    <entry file="file://$PROJECT_DIR$/src/libs/jquery.als-1.7.min.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/react-slick/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VariableWidth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="3" selection-start-line="4" selection-start-column="2" selection-end-line="27" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="528">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
           <folding>
             <element signature="e#40#92#0" expanded="true" />
+            <marker date="1484880424000" expanded="true" signature="2995:3759" ph="..." />
+            <marker date="1484880424000" expanded="true" signature="3067:3736" ph="..." />
+            <marker date="1484880424000" expanded="true" signature="3314:3320" ph="..." />
+            <marker date="1484880424000" expanded="true" signature="3351:3608" ph="..." />
+            <marker date="1484880424000" expanded="true" signature="3443:3561" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TopBar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Home_old.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TopBar_old.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TopBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Container.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

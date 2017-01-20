@@ -21,14 +21,11 @@ class Container extends Component {
       time: time
     };
     return (
-            <div className={styles.my_container_div}>
-              <div className={styles.my_home_background_div}>
-
+            <div className={styles.container_div}>
                 <TopBar {...topBarProps}/>
 
                 {this.props.children}
 
-              </div>
             </div>
     );
   }
