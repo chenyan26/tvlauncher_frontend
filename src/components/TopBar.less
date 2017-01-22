@@ -1,45 +1,76 @@
 .top_bar {
-  margin-bottom: 150px;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 
 .top_bar_row {
-  height: 50px;
-  width: 95%;
-  margin-left: 50px;
+  height: 60px;
+  width: 100%;
+  padding: 0 50px 0 50px;
 
   display: flex;
-  flex-direction: row;
   align-items: center;
+
+  z-index: 20;
 }
 
-.top_avatar {
-  flex-grow: 2;
+.top_btn_1, .top_btn_2, .top_account {
+  font-size: 15px;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
 }
 
-.top_avatar img{
-  height: 40px;
-  width: 40px;
+.top_btn_1 {
+  flex-basis: 140px;
 }
 
-.top_item {
-  flex-grow: 1;
-  color: white;
+.top_btn_1 img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.top_btn_2 {
+  margin-left: 20px;
+  flex-basis: 120px;
+}
+
+.top_btn_2 img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.top_account {
+  margin-left: 700px;
+  flex-basis: 140px;
+}
+
+.top_account img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.top_wifi {
+  margin-left: 20px;
+  flex-basis: 40px;
+  height: 35px;
+}
+
+.top_wifi img {
+  width: 35px;
 }
 
 .top_bar_bg {
   position: absolute;
   top: 0;
 
-  height: 50px;
+  height: 60px;
   width: 100%;
   margin-bottom: 150px;
-  background-image: url(../img/topbg20.jpg);
   opacity:0.4;
-  background-size: 100%;
 }
 
-//li {
-//  text-decoration:none;
-//}
+.top_bar_bg img {
+  width: 100%;
+  height: 100%;
+}

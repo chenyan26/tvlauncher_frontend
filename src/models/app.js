@@ -8,8 +8,22 @@ export default {
     namespace: 'app',
 
     state: {
-        number: '', //克拉号
-        time:'', //系统时间
+        // number: '', //克拉号
+        // date: '',
+        // time:'', //系统时间
+        // weather: '',
+        number: "800005",
+        date: "2016/08/26 八月初二 星期五（教师节）",
+        weather: "阴 20度",
+        time: "17:23",
+        frame: {
+            offset: {
+                left: 0,
+                top: 0
+            },
+            height: 0,
+            width: 0
+        },
         errorModalVisible: false,
         error: ""
     },
@@ -53,13 +67,20 @@ export default {
     },
 
     reducers: {
+        changeFrame(state, { payload }) {
+            return { ...state, frame: payload.frame };
+        },
 
         hideErrorModal(state) {
             return { ...state, errorModalVisible: false };
         },
 
         querySuccess(state, { payload }) {
-            return { ...state, number: payload.number, time: payload.time };
+            return { ...state,
+                number: payload.number,
+                time: payload.time,
+                date: payload.date,
+                weather: payload.weather };
         },
         queryFailed(state, { payload }){
             return { ...state, error: payload, errorModalVisible: true };

@@ -8,7 +8,9 @@ var qs = require('qs');
 
 const app = {
     number: "800005",
-    time: "2017/01/03 13:34:09"
+    date: "2016/08/26 八月初二 星期五（教师节）",
+    weather: "阴 20度",
+    time: "17:23"
 };
 
 module.exports = {
