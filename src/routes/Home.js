@@ -34,6 +34,7 @@ class Home extends React.Component {
         $("#mainSlider a").on("keydown",function(evt){
             var tabIndex = parseInt($(this).attr("tabindex"));
             console.log("tabIndex=" + tabIndex);
+            var isUp = false;
             switch (evt.which) {
                 case 13: {
                     alert("选择了：" + tabIndex);
@@ -57,6 +58,7 @@ class Home extends React.Component {
                     break;
                 case 38: //上
                     tabIndex = 1;
+                    isUp = true;
                     break;
                 case 40: //下
                     tabIndex = 201;
@@ -72,12 +74,18 @@ class Home extends React.Component {
             }
             if (tabIndex > 0) {
                 // $(".cGridImg[tabindex=" + tabIndex + "]").focus();
-                $("a[tabindex=" + tabIndex + "]").focus();
-                $("button[tabindex=" + tabIndex + "]").focus();
+                if (isUp) {
+                    $("button[tabindex=" + tabIndex + "]").focus();
 
-                var offset = $("button[tabindex=" + tabIndex + "]").offset();
-                var h = $("button[tabindex=" + tabIndex + "]").height();
-                var w = $("button[tabindex=" + tabIndex + "]").width();
+                    var offset = $("button[tabindex=" + tabIndex + "]").offset();
+                    var h = $("button[tabindex=" + tabIndex + "]").height();
+                    var w = $("button[tabindex=" + tabIndex + "]").width();
+                } else {
+                    $("a[tabindex=" + tabIndex + "]").focus();
+                    var offset = $("a[tabindex=" + tabIndex + "]").offset();
+                    var h = $("a[tabindex=" + tabIndex + "]").height();
+                    var w = $(" a[tabindex=" + tabIndex + "] img").width();
+                }
                 var frame = {
                     offset: offset,
                     height: h,

@@ -17,12 +17,14 @@ class TopBar extends Component {
             $("#topBar button").on("keydown",function(evt){
                 var tabIndex = parseInt($(this).attr("tabindex"));
                 console.log("tabIndex=" + tabIndex);
+                var isDown = false;
                 switch (evt.which) {
                     case 13:
                         alert("选择了：" + tabIndex);
                         break;
                     case 40: //下
                         tabIndex = 101;
+                        isDown = true;
                         break;
                     case 37: //左(会导致输入时无法使用左右移)
                         tabIndex--;
@@ -35,12 +37,19 @@ class TopBar extends Component {
                 }
                 if (tabIndex > 0) {
                     // $(".cGridImg[tabindex=" + tabIndex + "]").focus();
-                    $("button[tabindex=" + tabIndex + "]").focus();
-                    $("a[tabindex=" + tabIndex + "]").focus();
+                    if (isDown) {
+                        $("a[tabindex=" + tabIndex + "]").focus();
 
-                    var offset = $("a[tabindex=" + tabIndex + "]").offset();
-                    var h = $("a[tabindex=" + tabIndex + "]").height();
-                    var w = $("a[tabindex=" + tabIndex + "]").width();
+                        var offset = $("a[tabindex=" + tabIndex + "]").offset();
+                        var h = $("a[tabindex=" + tabIndex + "]").height();
+                        var w = $("a[tabindex=" + tabIndex + "] img").width();
+                    } else {
+                        $("button[tabindex=" + tabIndex + "]").focus();
+                        var offset = $("button[tabindex=" + tabIndex + "]").offset();
+                        var h = $("button[tabindex=" + tabIndex + "]").height();
+                        var w = $("button[tabindex=" + tabIndex + "]").width();
+                    }
+
                     var frame = {
                         offset: offset,
                         height: h,

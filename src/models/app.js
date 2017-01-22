@@ -18,11 +18,11 @@ export default {
         time: "17:23",
         frame: {
             offset: {
-                left: 0,
-                top: 0
+                left: 50,
+                top:10
             },
-            height: 0,
-            width: 0
+            height: 40,
+            width: 140
         },
         errorModalVisible: false,
         error: ""
