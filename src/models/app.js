@@ -16,22 +16,6 @@ export default {
         date: "2016/08/26 八月初二 星期五（教师节）",
         weather: "阴 20度",
         time: "17:23",
-        // frame: {
-        //     offset: {
-        //         left: 50,
-        //         top:10
-        //     },
-        //     height: 40,
-        //     width: 140
-        // },
-        frame: {
-            offset: {
-                left: 0,
-                top:0
-            },
-            height: 0,
-            width: 0
-        },
         errorModalVisible: false,
         error: ""
     },
@@ -75,9 +59,6 @@ export default {
     },
 
     reducers: {
-        changeFrame(state, { payload }) {
-            return { ...state, frame: payload.frame };
-        },
 
         hideErrorModal(state) {
             return { ...state, errorModalVisible: false };

@@ -31,28 +31,6 @@ class TopBar extends Component {
             }
             return true;
         });
-
-        const { dispatch } = this.props;
-        $("button").focus(function() {
-            var tabIndex = parseInt($(this).attr("tabindex"));
-            var offset = $("button[tabindex=" + tabIndex + "]").offset();
-            var h = $("button[tabindex=" + tabIndex + "]").height();
-            var w = $("button[tabindex=" + tabIndex + "]").width();
-
-            // alert("left:" + offset.left +"top:" + offset.top + "width:" + w + "height:" + h);
-
-            var frame = {
-                offset: offset,
-                height: h,
-                width: w
-            };
-            dispatch({
-                type: 'app/changeFrame',
-                payload: {
-                    frame: frame
-                },
-            });
-        }).bind(dispatch);
     }
 
     render() {
@@ -86,7 +64,6 @@ class TopBar extends Component {
 
 TopBar.propTypes = {
     number: PropTypes.string.isRequired,
-    dispatch: PropTypes.func.isRequired,
 };
 
 export default TopBar;

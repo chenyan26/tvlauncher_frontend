@@ -19,13 +19,13 @@ import img6 from '../img/card/6.png';
 class Home extends React.Component {
     state = ({
         divs:[
-            {title: "视频", img: imgv, sImg: "src/img/card/v.jpg", url: "ship"},
-            {title: "直播", img: img1, sImg: "src/img/card/1s.png", url: "zhibo"},
-            {title: "回看／点播／VR", img: img2, sImg: "src/img/card/1s.png", url: "huikan"},
-            {title: "视频通信", img: img3, sImg: "src/img/card/1s.png", url: "shiping"},
-            {title: "消息中心", img: img4, sImg: "src/img/card/1s.png", url: "xiaoxi"},
-            {title: "娱乐游戏", img: img5, sImg: "src/img/card/1s.png", url: "yule"},
-            {title: "系统服务", img: img6, sImg: "src/img/card/1s.png", url: "xitong"} ],
+            {title: "视频", img: imgv,  url: "ship"},
+            {title: "直播", img: img1, url: "zhibo"},
+            {title: "回看／点播／VR", img: img2, url: "huikan"},
+            {title: "视频通信", img: img3, url: "shiping"},
+            {title: "消息中心", img: img4, url: "xiaoxi"},
+            {title: "娱乐游戏", img: img5, url: "yule"},
+            {title: "系统服务", img: img6, url: "xitong"} ],
         tabIndex: 101
     });
 
@@ -54,28 +54,6 @@ class Home extends React.Component {
             }
             return true;
         });
-
-        const { dispatch } = this.props;
-        $("a").focus(function() {
-            var tabIndex = parseInt($(this).attr("tabindex"));
-            var offset = $("a[tabindex=" + tabIndex + "] img").offset();
-            var h = $("a[tabindex=" + tabIndex + "] img").height();
-            var w = $("a[tabindex=" + tabIndex + "] img").width();
-
-            // alert("left:" + offset.left +"top:" + offset.top + "width:" + w + "height:" + h);
-
-            var frame = {
-                offset: offset,
-                height: h,
-                width: w
-            };
-            dispatch({
-                type: 'app/changeFrame',
-                payload: {
-                    frame: frame
-                },
-            });
-        }).bind(dispatch);
     }
 
     //----------------render--------------------
@@ -97,7 +75,7 @@ class Home extends React.Component {
                         <Slider ref={c => this.slider = c } {...settings}>
                             {this.state.divs.map((obj, index) => {
                                 return(
-                                        <div key={index} style={index ? {width: 240} : {width: 490}}>
+                                        <div className={styles.slider_item} key={index} style={index ? {width: 240} : {width: 490}}>
                                             <a id={"card_" + index} tabIndex={101 + index}>
                                                 <img src={obj.img}/>
                                             </a>
