@@ -10,63 +10,49 @@ import wifiImg from '../img/icon/wifi1.png';
 import topbgImg from '../img/topbg20.jpg';
 
 class TopBar extends Component {
-
     componentDidMount() {
-        const { dispatch } = this.props;
-        $(function() {
-            $("#topBar button").on("keydown",function(evt){
-                var tabIndex = parseInt($(this).attr("tabindex"));
-                console.log("tabIndex=" + tabIndex);
-                var isDown = false;
-                switch (evt.which) {
-                    case 13:
-                        alert("选择了：" + tabIndex);
+        $("#topBar button").on("keydown",function(evt){
+            var tabIndex = parseInt($(this).attr("tabindex"));
+            console.log("tabIndex=" + tabIndex);
+            if (evt.which == 13) {
+                switch (tabIndex) {
+                    case 1:
+                        alert("选择了：" + tabIndex +"--视频管家");
                         break;
-                    case 40: //下
-                        tabIndex = 101;
-                        isDown = true;
+                    case 2:
+                        alert("选择了：" + tabIndex +"--消息");
                         break;
-                    case 37: //左(会导致输入时无法使用左右移)
-                        tabIndex--;
-                        break;
-                    case 39: //右(会导致输入时无法使用左右移)
-                        tabIndex++;
+                    case 3:
+                        alert("选择了：" + tabIndex +"--账号");
                         break;
                     default:
-                        return;
+                        break;
                 }
-                if (tabIndex > 0) {
-                    // $(".cGridImg[tabindex=" + tabIndex + "]").focus();
-                    if (isDown) {
-                        $("a[tabindex=" + tabIndex + "]").focus();
-
-                        var offset = $("a[tabindex=" + tabIndex + "]").offset();
-                        var h = $("a[tabindex=" + tabIndex + "]").height();
-                        var w = $("a[tabindex=" + tabIndex + "] img").width();
-                    } else {
-                        $("button[tabindex=" + tabIndex + "]").focus();
-                        var offset = $("button[tabindex=" + tabIndex + "]").offset();
-                        var h = $("button[tabindex=" + tabIndex + "]").height();
-                        var w = $("button[tabindex=" + tabIndex + "]").width();
-                    }
-
-                    var frame = {
-                        offset: offset,
-                        height: h,
-                        width: w
-                    };
-                    dispatch({
-                        type: 'app/changeFrame',
-                        payload: {
-                            frame: frame,
-                        },
-                    });
-
-                    return false;
-                }
-                return true;
-            });
+            }
+            return true;
         });
+
+        const { dispatch } = this.props;
+        $("button").focus(function() {
+            var tabIndex = parseInt($(this).attr("tabindex"));
+            var offset = $("button[tabindex=" + tabIndex + "]").offset();
+            var h = $("button[tabindex=" + tabIndex + "]").height();
+            var w = $("button[tabindex=" + tabIndex + "]").width();
+
+            // alert("left:" + offset.left +"top:" + offset.top + "width:" + w + "height:" + h);
+
+            var frame = {
+                offset: offset,
+                height: h,
+                width: w
+            };
+            dispatch({
+                type: 'app/changeFrame',
+                payload: {
+                    frame: frame
+                },
+            });
+        }).bind(dispatch);
     }
 
     render() {
